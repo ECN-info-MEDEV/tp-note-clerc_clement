@@ -18,7 +18,14 @@ public class Combinaison {
     public Combinaison(ArrayList combinaison) {
         this.combinaison = combinaison;
     }
-    
+
+    /**
+     * Standard constructor.
+     * @param c1
+     * @param c2
+     * @param c3
+     * @param c4
+     */
     public Combinaison(Couleur c1, Couleur c2, Couleur c3, Couleur c4) {
         this.combinaison = new ArrayList();
         this.combinaison.add(c1);

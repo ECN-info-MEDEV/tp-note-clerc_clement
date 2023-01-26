@@ -12,6 +12,10 @@ public class Couleur {
     
     private int couleur;
 
+    /**
+     * Standard constructor.
+     * @param couleur
+     */
     public Couleur(int couleur) {
         this.couleur = couleur;
     }
