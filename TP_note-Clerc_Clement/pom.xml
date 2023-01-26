@@ -75,6 +75,10 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.6</version>
+                <configuration>
+                <append>true</append>
+                <destFile>${jacoco.reportPath}</destFile>
+            </configuration>
             </plugin>
         </plugins>
     </reporting>
