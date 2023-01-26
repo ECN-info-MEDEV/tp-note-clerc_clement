@@ -67,7 +67,7 @@ public class Combinaison {
                 }
             }
             System.out.println("Il y a " + rouge + " couleurs à la bonne place" );
-            System.out.println("Il y a " + blanc + " couleurs qui ocrrespondent mais ne sont pas à la bonne place");
+            System.out.println("Il y a " + blanc + " couleurs qui correspondent mais ne sont pas à la bonne place");
             return false;
             
         }
