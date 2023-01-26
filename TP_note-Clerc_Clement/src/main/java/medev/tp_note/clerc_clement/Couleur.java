@@ -10,4 +10,20 @@ package medev.tp_note.clerc_clement;
  */
 public class Couleur {
     
+    private int couleur;
+
+    public Couleur(int couleur) {
+        this.couleur = couleur;
+    }
+
+    public int getCouleur() {
+        return couleur;
+    }
+
+    public void setCouleur(int Couleur) {
+        this.couleur = couleur;
+    }
+    
+    
+    
 }
