@@ -13,6 +13,6 @@ class CombinaisonTest {
   }
   @test
     void inegalite(){
-        assertEquals(true, aDeviner.compare(tentaive2));
+        assertEquals(true, aDeviner.compare(tentative2));
   }
 }
