@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- *
- * @author coco
+ * This class represents the combination of colors played by players.
+ * @author Corentin et Léo
  */
 public class Combinaison {
     
@@ -19,7 +19,14 @@ public class Combinaison {
     public Combinaison(ArrayList combinaison) {
         this.combinaison = combinaison;
     }
-    
+
+    /**
+     * Standard constructor.
+     * @param c1
+     * @param c2
+     * @param c3
+     * @param c4
+     */
     public Combinaison(Couleur c1, Couleur c2, Couleur c3, Couleur c4) {
         this.combinaison = new ArrayList();
         this.combinaison.add(c1);
@@ -55,6 +62,7 @@ public class Combinaison {
     public void setCombinaison(ArrayList<Couleur> combinaison) {
         this.combinaison = combinaison;
     }
+
     
     public boolean egal(Combinaison combinaison2) {
         for (int i=0; i< combinaison2.getCombinaison().size(); i++) {
@@ -65,6 +73,16 @@ public class Combinaison {
         return true;
     }
     
+
+
+
+    /**
+     * This method compares two combinations of color. In addition to returning a  boolean, it displays a console message
+     * giving how many pin the player put down correctly (both color and position match, kept track of with the "rouge" variable)
+     * and how many have the correct color, but not the correct place (kept track of with the "blanc" variable).
+     * @param devine The combinaison entered by the guessing player.
+     * @return A boolean indicating whether the combination is correct or not
+     */
     public boolean compare(Combinaison devine) {
         int rouge = 0;
         int blanc = 0;

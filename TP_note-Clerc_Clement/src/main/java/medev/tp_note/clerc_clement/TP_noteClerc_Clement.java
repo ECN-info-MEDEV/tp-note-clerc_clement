@@ -6,8 +6,8 @@
 package medev.tp_note.clerc_clement;
 
 /**
- *
- * @author coco
+ * The main class.
+ * @author Corentin et Léo
  */
 public class TP_noteClerc_Clement {
 

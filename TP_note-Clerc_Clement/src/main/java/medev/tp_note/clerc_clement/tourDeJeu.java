@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
- * @author coco
+ * This class handles a turn in the game.
+ * @author Corentin et Léo
  */
 public class tourDeJeu {
     private int nbr_tour = 2;

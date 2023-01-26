@@ -5,13 +5,17 @@
 package medev.tp_note.clerc_clement;
 
 /**
- *
- * @author coco
+ * This class represents the color of the pawn.
+ * @author Corentin et Léo
  */
 public class Couleur {
     
     private int couleur;
 
+    /**
+     * Standard constructor.
+     * @param couleur
+     */
     public Couleur(int couleur) {
         this.couleur = couleur;
     }
