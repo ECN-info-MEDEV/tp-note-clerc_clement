@@ -16,16 +16,20 @@ public class Combinaison {
     
     private ArrayList<Couleur> combinaison; 
 
+    /**
+     * 
+     * @param combinaison
+     */
     public Combinaison(ArrayList combinaison) {
         this.combinaison = combinaison;
     }
 
     /**
-     * Standard constructor.
-     * @param c1
-     * @param c2
-     * @param c3
-     * @param c4
+     * This constructor can create an object combinaison from four objects couleur
+     * @param c1 Couleur 1
+     * @param c2 Couleur 2
+     * @param c3 Couleur 3
+     * @param c4 Couleur 4
      */
     public Combinaison(Couleur c1, Couleur c2, Couleur c3, Couleur c4) {
         this.combinaison = new ArrayList();
@@ -35,6 +39,9 @@ public class Combinaison {
         this.combinaison.add(c4);
     }
 
+    /**
+     * This method is a constructor of the Combination class, which builds a combination object from 4 colors entered by the user
+     */
     public Combinaison() {
        Scanner sc = new Scanner(System.in);
        int c = 0;
@@ -55,15 +62,28 @@ public class Combinaison {
         
         
     }
+
+    /**
+     * Getter of the attribute combinaison from the class Combinaison
+     * @return combinaison
+     */
     public ArrayList<Couleur> getCombinaison() {
         return combinaison;
     }
 
+    /**
+     * Setter of the attribute combinaison from the class Combinaison
+     * @param combinaison
+     */
     public void setCombinaison(ArrayList<Couleur> combinaison) {
         this.combinaison = combinaison;
     }
 
-    
+    /**
+     * Method to verify that two combinations are equal
+     * @param combinaison2
+     * @return true if combinaison are equal, false otherwise
+     */
     public boolean egal(Combinaison combinaison2) {
         for (int i=0; i< combinaison2.getCombinaison().size(); i++) {
             if (combinaison2.getCombinaison().get(i).getCouleur() != this.combinaison.get(i).getCouleur()) {
@@ -99,11 +119,9 @@ public class Combinaison {
                     devine2.add(new Couleur(devine.getCombinaison().get(i).getCouleur()));
                 }
             }
-            boolean check = true;
             for (int j=0; j<devine2.size(); j++) {
                 for (int k=0; k<combinaison2.size(); k++) {
-                    if ((combinaison2.get(k).getCouleur() == devine2.get(j).getCouleur()) && check) {
-                        check = true;
+                    if ((combinaison2.get(k).getCouleur() == devine2.get(j).getCouleur())) {
                         blanc += 1;
                     } 
                 }

@@ -16,24 +16,71 @@ public class tourDeJeu {
     private int score_j1 = 0;
     private int score_j2 = 0;
 
-    public tourDeJeu(int nbr_tour) {
+    /**
+     * Constructor of the class tourDeJeu which set the value of the attributes nbr_tour, score_j1 and score_j2
+     * @param nbr_tour Number of turn in the game
+     * @param score_j1 score of player 1
+     * @param score_j2 score of player 2
+     */
+    public tourDeJeu(int nbr_tour, int score_j1, int score_j2) {
         this.nbr_tour = nbr_tour;
+        this.score_j1 = score_j1;
+        this.score_j2 = score_j2;
     }
 
+    /**
+     * Getter of the attribute nbr_tour from the class tourDeJeu
+     * @return the value of the attribute nbr_tour
+     */
     public int getNbr_tour() {
         return nbr_tour;
     }
+    
+    /**
+     * Getter of the attribute score_j2 from the class tourDeJeu
+     * @return the value of the attribute score_j1
+     */
+    public int getScore_j1() {
+        return score_j1;
+    }
+    
+    /**
+     * Getter of the attribute score_j2 from the class tourDeJeu
+     * @return the value of the attribute score_j2
+     */
+    public int getScore_j2() {
+        return score_j2;
+    }
 
+    /**
+     * Setter of the attribute nbr_tour from the class tourDeJeu
+     * @param nbr_tour number of turn in the game
+     */
     public void setNbr_tour(int nbr_tour) {
         this.nbr_tour = nbr_tour;
     }
     
-    public boolean est_impair() {
-        return this.nbr_tour % 2 != 0;
+    /**
+     * Setter of the attribute score_j1 from the class tourDeJeu
+     * @param score_j1 score of player 1
+     */
+    public void setScore_j1(int score_j1) {
+        this.score_j1 = score_j1;
     }
     
-
+    /**
+     * Setter of the attribute score_j2 from the class tourDeJeu
+     * @param score_j2 score of player 2
+     */
+    public void setScore_j2(int score_j2) {
+        this.score_j2 = score_j2;
+    }
     
+ 
+    
+    /**
+     * Constructor of the class touDeJeu, which implement the game, by asking a player to input the number of turn, the coder the combinaison, and the decoder the propositions. Once a turn is finished, the method update the points for the two players 
+     */
     public tourDeJeu() {
         boolean tourj1 = true;
         Scanner sc = new Scanner(System.in);
