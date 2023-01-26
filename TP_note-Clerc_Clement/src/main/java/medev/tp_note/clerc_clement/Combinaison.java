@@ -47,7 +47,7 @@ public class Combinaison {
      * giving how many pin the player put down correctly (both color and position match, kept track of with the "rouge" variable)
      * and how many have the correct color, but not the correct place (kept track of with the "blanc" variable).
      * @param devine The combinaison entered by the guessing player.
-     * @return A boolean indicating whether the combination is correct or not
+     * @return A boolean indicating whether the combination is correct or not.
      */
     public boolean compare(ArrayList<Couleur> devine) {
         int rouge = 0;
