@@ -35,16 +35,16 @@ public class Combinaison {
         this.combinaison = combinaison;
     }
     
-    public boolean compare(ArrayList<Couleur> devine) {
+    public boolean compare(Combinaison devine) {
         int rouge = 0;
         int blanc = 0;
         ArrayList<Couleur> combinaison2 = new ArrayList(this.combinaison);
-        ArrayList<Couleur> devine2 = new ArrayList(devine);
+        ArrayList<Couleur> devine2 = new ArrayList(devine.getCombinaison());
         if (this.combinaison.equals(devine)) {
             return true;
         } else {
             for (int i=0; i<4; i++) {
-                if (this.combinaison.get(i).getCouleur() == devine.get(i).getCouleur()) {
+                if (this.combinaison.get(i).getCouleur() == devine.getCombinaison().get(i).getCouleur()) {
                     rouge += 1;
                     combinaison2.remove(i);
                     devine2.remove(i);
