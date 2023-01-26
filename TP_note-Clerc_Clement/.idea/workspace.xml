@@ -10,6 +10,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -35,11 +42,82 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/leo20/Desktop/INFOSI/2emepériode/MEDEV/DS/TP_note-Clerc_Clement"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/leo20/Desktop/INFOSI/2emepériode/MEDEV/DS/TP_note-Clerc_Clement",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="medev.tp_note.clerc_clement" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CombinaisonTest">
+    <configuration name="CombinaisonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_note-Clerc_Clement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="medev.tp_note.clerc_clement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="medev.tp_note.clerc_clement" />
+      <option name="MAIN_CLASS_NAME" value="medev.tp_note.clerc_clement.CombinaisonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombinaisonTest.egalite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_note-Clerc_Clement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="medev.tp_note.clerc_clement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="medev.tp_note.clerc_clement" />
+      <option name="MAIN_CLASS_NAME" value="medev.tp_note.clerc_clement.CombinaisonTest" />
+      <option name="METHOD_NAME" value="egalite" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombinaisonTest.inegalite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_note-Clerc_Clement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="medev.tp_note.clerc_clement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="medev.tp_note.clerc_clement" />
+      <option name="MAIN_CLASS_NAME" value="medev.tp_note.clerc_clement.CombinaisonTest" />
+      <option name="METHOD_NAME" value="inegalite" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CombinaisonTest" />
+        <item itemvalue="JUnit.CombinaisonTest.inegalite" />
+        <item itemvalue="JUnit.CombinaisonTest.egalite" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
