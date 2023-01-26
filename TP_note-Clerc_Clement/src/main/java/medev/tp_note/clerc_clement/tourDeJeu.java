@@ -5,8 +5,8 @@
 package medev.tp_note.clerc_clement;
 
 /**
- *
- * @author coco
+ * This class handles a turn in the game.
+ * @author Corentin et Léo
  */
 public class tourDeJeu {
     

@@ -5,8 +5,8 @@
 package medev.tp_note.clerc_clement;
 
 /**
- *
- * @author coco
+ * This class represents the color of the pawn.
+ * @author Corentin et Léo
  */
 public class Couleur {
     

@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author coco
+ * This class represents the combination of colors played by players.
+ * @author Corentin et Léo
  */
 public class Combinaison {
     
