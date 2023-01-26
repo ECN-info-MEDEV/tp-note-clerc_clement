@@ -42,6 +42,37 @@ public class Combinaison {
         this.combinaison = combinaison;
     }
     
+    public boolean compare(ArrayList<Couleur> devine) {
+        int rouge = 0;
+        int blanc = 0;
+        ArrayList<Couleur> combinaison2 = new ArrayList(this.combinaison);
+        ArrayList<Couleur> devine2 = new ArrayList(devine);
+        if (this.combinaison.equals(devine)) {
+            return true;
+        } else {
+            for (int i=0; i<4; i++) {
+                if (this.combinaison.get(i).getCouleur() == devine.get(i).getCouleur()) {
+                    rouge += 1;
+                    combinaison2.remove(i);
+                    devine2.remove(i);
+                }
+            }
+            boolean check = true;
+            for (int j=0; j<devine2.size(); j++) {
+                for (int k=0; k<combinaison2.size(); k++) {
+                    if ((combinaison2.get(k).getCouleur() == devine2.get(j).getCouleur()) && check) {
+                        check = false;
+                        blanc += 1;
+                    } 
+                }
+            }
+            System.out.println("Il y a " + rouge + " couleurs à la bonne place" );
+            System.out.println("Il y a " + blanc + " couleurs qui ocrrespondent mais ne sont pas à la bonne place");
+            return false;
+            
+        }
+    }
+    
     
     
     
