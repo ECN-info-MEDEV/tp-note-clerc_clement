@@ -20,14 +20,25 @@ public class Couleur {
         this.couleur = couleur;
     }
 
+    /**
+     * Getter of the attribute couleur
+     * @return the value of the attribute couleur
+     */
     public int getCouleur() {
         return couleur;
     }
 
+    /**
+     * Setter of the attribute couleur
+     * @param Couleur 
+     */
     public void setCouleur(int Couleur) {
         this.couleur = couleur;
     }
     
+    public boolean egal(Couleur c) {
+        return (this.couleur == c.getCouleur());
+    }
     
     
 }
