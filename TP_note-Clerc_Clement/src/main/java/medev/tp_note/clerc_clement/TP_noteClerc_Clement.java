@@ -12,6 +12,6 @@ package medev.tp_note.clerc_clement;
 public class TP_noteClerc_Clement {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        tourDeJeu jouer = new tourDeJeu();
     }
 }
