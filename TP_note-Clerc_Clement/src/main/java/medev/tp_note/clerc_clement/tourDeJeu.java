@@ -13,6 +13,8 @@ import java.util.Scanner;
  */
 public class tourDeJeu {
     private int nbr_tour = 2;
+    private int score_j1 = 0;
+    private int score_j2 = 0;
 
     public tourDeJeu(int nbr_tour) {
         this.nbr_tour = nbr_tour;
@@ -33,6 +35,7 @@ public class tourDeJeu {
 
     
     public tourDeJeu() {
+        boolean tourj1 = true;
         Scanner sc = new Scanner(System.in);
         System.out.println("Choisissez un nombre de tour de jeu");
         this.nbr_tour = sc.nextInt();
@@ -41,23 +44,31 @@ public class tourDeJeu {
             this.nbr_tour = sc.nextInt();
         }
         for (int k=0; k < this.nbr_tour; k++) {
-            ArrayList<Couleur> combinaison = new ArrayList();
-            int c;
-            System.out.println("Le joueur choisit une combinaison");
-            for (int j=0; j<4; j++) {
-                System.out.println("Le joueur choisit la couleur " + (j+1));
-                System.out.println("- Rouge: 1");
-                System.out.println("- Jaune: 2");
-                System.out.println("- Bleu: 3");
-                System.out.println("- Vert: 4");
-                System.out.println("- Blanc: 5");
-                System.out.println("- Noir: 6");
-                c = sc.nextInt();
-                combinaison.add(new Couleur(c));
-            }
-            for (int i=0; i <12; i++) {
+            System.out.println("Partie " + (k+1));
+            System.out.println("Le codeur choisit une combinaison");
+            Combinaison answer = new Combinaison();
+            int n=0;
+            boolean check = true;
+            while (n < 12 && check) {
+                System.out.println("Tour " + (n+1));
+                System.out.println("Le décodeur présente une proposition");
+                Combinaison proposition = new Combinaison();
+                if (answer.compare(proposition)) {
+                    System.out.println("Le décodeur a trouvé la bonne combinaison");
+                    check = false;
+                } else {
+                    n += 1;
+                }
             
             }
+            if (tourj1) {
+                this.score_j1 += n+1;
+            } else {
+                this.score_j2 += n+1;
+            }
+            tourj1 = !tourj1;
+            System.out.println("Le joueur 1 à " + score_j1 + " points");
+            System.out.println("Le joueur 2 à " + score_j2 + " points");
         }
     }
     

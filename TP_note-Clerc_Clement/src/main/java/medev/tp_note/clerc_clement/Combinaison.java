@@ -6,6 +6,7 @@ package medev.tp_note.clerc_clement;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * This class represents the combination of colors played by players.
@@ -34,6 +35,26 @@ public class Combinaison {
         this.combinaison.add(c4);
     }
 
+    public Combinaison() {
+       Scanner sc = new Scanner(System.in);
+       int c = 0;
+       this.combinaison = new ArrayList();
+       for (int j=0; j<4; j++) {
+                System.out.println("Le joueur choisit la couleur " + (j+1));
+                System.out.println("- Rouge: 1");
+                System.out.println("- Jaune: 2");
+                System.out.println("- Bleu: 3");
+                System.out.println("- Vert: 4");
+                System.out.println("- Blanc: 5");
+                System.out.println("- Noir: 6");
+                c = sc.nextInt();
+                this.combinaison.add(new Couleur(c));
+            }
+            
+        
+        
+        
+    }
     public ArrayList<Couleur> getCombinaison() {
         return combinaison;
     }
@@ -41,6 +62,18 @@ public class Combinaison {
     public void setCombinaison(ArrayList<Couleur> combinaison) {
         this.combinaison = combinaison;
     }
+
+    
+    public boolean egal(Combinaison combinaison2) {
+        for (int i=0; i< combinaison2.getCombinaison().size(); i++) {
+            if (combinaison2.getCombinaison().get(i).getCouleur() != this.combinaison.get(i).getCouleur()) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+
 
 
     /**
@@ -50,26 +83,27 @@ public class Combinaison {
      * @param devine The combinaison entered by the guessing player.
      * @return A boolean indicating whether the combination is correct or not
      */
-    public boolean compare(ArrayList<Couleur> devine) {
+    public boolean compare(Combinaison devine) {
         int rouge = 0;
         int blanc = 0;
-        ArrayList<Couleur> combinaison2 = new ArrayList(this.combinaison);
-        ArrayList<Couleur> devine2 = new ArrayList(devine.getCombinaison());
-        if (this.combinaison.equals(devine)) {
+        ArrayList<Couleur> combinaison2 = new ArrayList();
+        ArrayList<Couleur> devine2 = new ArrayList();
+        if (this.egal(devine)) {
             return true;
         } else {
             for (int i=0; i<4; i++) {
                 if (this.combinaison.get(i).getCouleur() == devine.getCombinaison().get(i).getCouleur()) {
                     rouge += 1;
-                    combinaison2.remove(i);
-                    devine2.remove(i);
+                } else {
+                    combinaison2.add(new Couleur(this.combinaison.get(i).getCouleur()));
+                    devine2.add(new Couleur(devine.getCombinaison().get(i).getCouleur()));
                 }
             }
             boolean check = true;
             for (int j=0; j<devine2.size(); j++) {
                 for (int k=0; k<combinaison2.size(); k++) {
                     if ((combinaison2.get(k).getCouleur() == devine2.get(j).getCouleur()) && check) {
-                        check = false;
+                        check = true;
                         blanc += 1;
                     } 
                 }
