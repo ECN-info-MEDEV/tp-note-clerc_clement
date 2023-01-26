@@ -99,6 +99,10 @@
                                 <goals>
                                     <goal>prepare-agent</goal>
                                 </goals>
+                                <configuration>
+                <append>true</append>
+                <destFile>${jacoco.reportPath}</destFile>
+            </configuration>
                             </execution>
                             <execution>
                                 <id>report</id>
